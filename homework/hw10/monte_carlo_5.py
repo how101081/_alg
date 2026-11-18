@@ -1,6 +1,8 @@
 """
 第10週習題 5 - n 變數黎曼積分與蒙地卡羅積分
-integral(f, low, high) 的 n = len(low)，再把同一題改用蒙地卡羅法做。
+integral(f, low, high) 的 n = len(low)，範例 f=x1^2+...+xn^2，low=0, high=1。
+再把同一題改用蒙地卡羅法做。
+本程式使用 AI 協助撰寫。
 """
 
 import random
