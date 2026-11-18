@@ -18,7 +18,11 @@ if __name__ == "__main__":
     random.seed(0)
 
     print("蒙地卡羅單變數積分 (100000 個樣本)")
-    ans = mc_integral(math.sin, 0, math.pi)
-    print(f"  ∫[0,π] sin(x) dx = {ans:.6f}  (精確值 2)")
-    ans = mc_integral(lambda x: x ** 2, 0, 1)
-    print(f"  ∫[0,1] x^2 dx     = {ans:.6f}  (精確值 {1/3:.6f})")
+    ans1 = mc_integral(math.sin, 0, math.pi)
+    print(f"  ∫[0,π] sin(x) dx = {ans1:.6f}  (精確值 2)")
+    ans2 = mc_integral(lambda x: x ** 2, 0, 1)
+    print(f"  ∫[0,1] x^2 dx     = {ans2:.6f}  (精確值 {1/3:.6f})")
+
+    assert abs(ans1 - 2) < 0.01
+    assert abs(ans2 - 1 / 3) < 0.01
+    print("測試通過")

@@ -31,4 +31,7 @@ if __name__ == "__main__":
     print("蒙地卡羅 n 維積分 (100000 個樣本)")
     for n in (2, 3, 5):
         exact = math.pi ** (n / 2) / math.gamma(n / 2 + 1)
-        print(f"  {n} 維單位球體積 = {ball_volume(n):.6f}  (精確值 {exact:.6f})")
+        vol = ball_volume(n)
+        print(f"  {n} 維單位球體積 = {vol:.6f}  (精確值 {exact:.6f})")
+        assert abs(vol - exact) < 0.05
+    print("測試通過")

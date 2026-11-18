@@ -32,6 +32,11 @@ if __name__ == "__main__":
 
     print("n 變數數值微分與積分")
     print("f(x,y,z) = x^2 + y^2 + z^2")
-    print(f"  grad f(1,2,3) = {gradient(f, (1, 2, 3))}  (精確值 (2, 4, 6))")
+    grad = gradient(f, (1, 2, 3))
+    print(f"  grad f(1,2,3) = {grad}  (精確值 (2, 4, 6))")
     vol = integral_grid(f, (0, 0, 0), (1, 1, 1))
     print(f"  ∫[0,1]^3 f dV = {vol:.6f}  (精確值 1)")
+
+    assert all(abs(a - b) < 1e-5 for a, b in zip(grad, (2, 4, 6)))
+    assert abs(vol - 1) < 0.01
+    print("測試通過")

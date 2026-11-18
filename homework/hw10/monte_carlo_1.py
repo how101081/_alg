@@ -32,3 +32,9 @@ if __name__ == "__main__":
     print("g(x) = sin(x)")
     print(f"  g'(1)        = {derivative(g, 1):.6f}  (精確值 {math.cos(1):.6f})")
     print(f"  ∫[0,π] g(x)dx = {integrate(g, 0, math.pi):.6f}  (精確值 2)")
+
+    assert abs(derivative(f, 2) - 7) < 1e-4
+    assert abs(integrate(f, 0, 1) - (1 / 3 + 3 / 2 + 1)) < 1e-4
+    assert abs(derivative(g, 1) - math.cos(1)) < 1e-4
+    assert abs(integrate(g, 0, math.pi) - 2) < 1e-4
+    print("測試通過")
