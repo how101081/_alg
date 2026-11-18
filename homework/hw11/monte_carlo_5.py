@@ -1,5 +1,5 @@
 """
-第10週習題 5 - 黎曼積分法 integral(f, low, high)
+第11週習題 5 - 黎曼積分法 integral(f, low, high)
 n = len(low)，範例 f=x1^2+...+xn^2，low=0, high=1。
 本程式使用 AI 協助撰寫。
 """
