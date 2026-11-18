@@ -2,7 +2,7 @@
 
 五題各自獨立成一個 Python 檔，檔名照題號 `monte_carlo_1.py` ～ `monte_carlo_5.py` 排序，只使用標準函式庫。
 
-本作業的五支程式與本 README 皆**使用 AI 協助撰寫**；題目需求由使用者提供，程式皆已實際執行驗證。
+本作業的五支程式與本 README 皆**使用 AI 協助撰寫**。
 
 ## 1. `monte_carlo_1.py` - 單變數數值微分與積分
 
@@ -40,7 +40,3 @@ python monte_carlo_3.py
 python monte_carlo_4.py
 python monte_carlo_5.py
 ```
-
-## AI 使用說明
-
-五支程式（各檔開頭註解）與本 README 都說明了使用 AI 協助撰寫；本作業沒有使用其他外部套件。
