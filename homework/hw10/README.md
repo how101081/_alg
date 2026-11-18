@@ -1,6 +1,5 @@
 # 第10週習題 - 蒙地卡羅隨機法
 
-五題各自獨立成一個 Python 檔，檔名照題號 `monte_carlo_1.py` ～ `monte_carlo_5.py` 排序，只使用標準函式庫。
 
 ## 1. `monte_carlo_1.py` - 單變數數值微分與積分
 
